@@ -13,5 +13,6 @@
         <module>compute</module>
         <module>consumer</module>
         <module>configcenter</module>
+        <module>configclient</module>
     </modules>
 </project>

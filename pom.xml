@@ -9,10 +9,11 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>eureka</module>
-        <module>compute</module>
-        <module>consumer</module>
-        <module>configcenter</module>
-        <module>configclient</module>
+        <module>eureka-server</module>
+        <module>compute-service</module>
+        <module>ribbon-consumer</module>
+        <module>feign-consumer</module>
+        <module>config-center</module>
+        <module>config-client</module>
     </modules>
 </project>

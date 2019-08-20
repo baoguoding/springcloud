@@ -12,14 +12,19 @@ import java.util.concurrent.atomic.AtomicInteger;
 @RestController
 public class RestTemplateController {
 
+//    @Autowired
+//    private RestTemplate restTemplate;
+
     @Autowired
-    private RestTemplate restTemplate;
+    private ComputeService computeService;
 
     private AtomicInteger sn = new AtomicInteger(0);
-    @RequestMapping(value = "/test", method = RequestMethod.GET)
-    public void test(@RequestParam Integer a, @RequestParam Integer b) {// 将原来的ip:port的形式，改成注册到Eureka Server上的应用名即可
-        System.out.println("==============================");
-        String result = restTemplate.getForObject("http://compute-service/add?a="+a +"&b="+b + "&sn="+sn.incrementAndGet(), String.class);
-        System.out.println("返回结果:" + result);
+    @RequestMapping(value = "/add", method = RequestMethod.GET)
+    public String add(@RequestParam Integer a, @RequestParam Integer b) {
+        Long start = System.currentTimeMillis();
+        String temp = computeService.addService();
+        Long end = System.currentTimeMillis();
+        System.out.println("computeService.addService()="+temp + ",user time=" +(end-start) + "毫秒");
+        return temp;
     }
 }

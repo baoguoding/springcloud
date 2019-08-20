@@ -15,5 +15,6 @@
         <module>feign-consumer</module>
         <module>config-center</module>
         <module>config-client</module>
+        <module>eureka-feign</module>
     </modules>
 </project>

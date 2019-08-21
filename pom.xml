@@ -16,5 +16,7 @@
         <module>config-center</module>
         <module>config-client</module>
         <module>eureka-feign</module>
+        <module>hystrix-dashboard</module>
+        <module>hystrix-turbine</module>
     </modules>
 </project>

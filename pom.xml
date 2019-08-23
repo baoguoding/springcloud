@@ -18,5 +18,10 @@
         <module>eureka-feign</module>
         <module>hystrix-dashboard</module>
         <module>hystrix-turbine</module>
+        <module>consul-server1</module>
+        <module>consul-server2</module>
+        <module>consul-client</module>
+        <module>service-producter</module>
+        <module>consul-consumer</module>
     </modules>
 </project>

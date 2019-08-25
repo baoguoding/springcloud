@@ -11,6 +11,7 @@
     <modules>
         <module>eureka-server</module>
         <module>compute-service</module>
+        <module>compute-service-B</module>
         <module>ribbon-consumer</module>
         <module>feign-consumer</module>
         <module>config-center</module>
@@ -23,5 +24,6 @@
         <module>consul-client</module>
         <module>service-producter</module>
         <module>consul-consumer</module>
+        <module>api-gateway</module>
     </modules>
 </project>
